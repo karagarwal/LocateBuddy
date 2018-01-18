@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skinfonaut.locatebuddy.RegConfirmation"
+    android:background="@drawable/gradient_register"
+   >
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:onClick="goLogin"
+        android:text="Login Now"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:id="@+id/closeBt"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="77dp"
+        android:onClick="gocls"
+        android:text="Close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <ImageView
+        android:id="@+id/imagetick"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:layout_marginTop="43dp"
+        android:src="@drawable/tick"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Successfully Registered"
+        android:textAlignment="center"
+        android:textColor="#004105"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        android:textAlignment="center"
+        android:textColor="#0b39b9"
+        android:text="Your Phone Number has been Verified"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/closeBt"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

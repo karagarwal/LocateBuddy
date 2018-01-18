@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="5dp"
+    android:layout_height="match_parent"
+    tools:context="skinfonaut.locatebuddy.RegisterActivity"
+    android:background="@drawable/back2"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:id="@+id/editName"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColorHint="#403939"
+                    android:hint="Name"
+                    android:layout_marginTop="15dp"
+                    android:inputType="textPersonName" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/editUser"
+                android:hint="Username"
+                android:textColorHint="#403939"
+                android:layout_centerHorizontal="true"
+                android:inputType="text"
+                android:layout_below="@+id/editName"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/editPass"
+                android:hint="Password"
+                android:textColorHint="#403939"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:layout_below="@+id/editUser"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/editCPass"
+                android:hint="Confirm Password"
+                android:textColorHint="#403939"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editPass"
+                android:layout_marginTop="15dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/editCont"
+                android:hint="Contact"
+                android:textColorHint="#403939"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:layout_below="@+id/editCPass"
+                android:layout_marginTop="15dp"
+                android:maxLength="10"
+                
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/editmail"
+                android:hint="Email Id"
+                android:textColorHint="#403939"
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/editCont"
+                android:layout_marginTop="15dp"
+                />
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:id="@+id/RegisBt"
+                android:text="Register"
+                android:onClick="onReg"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/editmail"
+                android:layout_marginTop="20dp"
+                android:elevation="15dp"
+
+               />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BackBt"
+                android:text="Close"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/RegisBt"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="15dp"
+                />
+
+        </RelativeLayout>
+   </ScrollView>
+</RelativeLayout>

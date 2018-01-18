@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_register"
+    tools:context="skinfonaut.locatebuddy.ForgetPass">
+
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:text="Forget Your Password No PROBLEM"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Just Enter Your Mobile Number"
+        android:layout_below="@+id/textView38"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile"
+        android:hint="Registered Number"
+        android:inputType="phone"
+        android:textColorHint="#403939"
+        android:maxLength="10"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="150dp"
+        android:alpha="0.8"
+        android:onClick="FPass_Action"
+        android:layout_height="54dp"
+        android:text="Submit"
+        android:layout_below="@+id/mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+
+</RelativeLayout>

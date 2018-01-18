@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        tools:context="skinfonaut.locatebuddy.UsersArea" />
+    <Button
+        android:id="@+id/btSatellite"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=" Satellite "
+        android:background="#defaf2f2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Close"
+        android:background="#defaf2f2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btSatellite"
+        android:layout_toEndOf="@+id/btSatellite"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignTop="@+id/btSatellite" />
+
+    <Button
+        android:id="@+id/btSOS"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="SOS"
+        android:background="#defaf2f2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btClose"
+        android:layout_toEndOf="@+id/btClose"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignTop="@+id/btClose" />
+
+
+    <ZoomControls
+        android:id="@+id/zcZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btSatellite"
+        android:layout_alignParentRight="true">
+
+
+
+    </ZoomControls>
+
+
+</RelativeLayout>
+
